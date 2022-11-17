@@ -23,9 +23,9 @@
    ```sh
    git clone https://github.com/baobabnamu/nestjs-github-oauth.git
    ```
-- Docker Container build and Run  
+- NestJS Start
    ```sh
-   docker-compose up --build
+   npm run start:dev
    ```
 <br/>
 
@@ -38,3 +38,5 @@
 
 | Variable           | dev | qa/prod |  Example                 | Explanation                                                                         |
 | ------------------ | :-: | :-----: | :-----------------------: | ----------------------------------------------------------------------------------- |
+| CLIENT_ID | ✅ | ✅ | 임의의 문자열 값 | Github Developer Setting에서 생성할 수 있습니다. |
+| CLIENT_SECRET | ✅ | ✅ | 임의의 문자열 값 | Github Developer Setting에서 생성할 수 있습니다. |
