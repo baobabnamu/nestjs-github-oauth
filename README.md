@@ -30,7 +30,7 @@
 <br/>
 
 ## How to Test
-react-github-oauth 프로젝트 실행 후 Github 액세스 토큰을 발급 받기 위한 코드를 얻어내야 합니다.
+react-github-oauth 프로젝트 실행 후 Github 액세스 토큰을 발급 받기 위한 코드를 얻어내야 합니다.  
 해당 코드를 /github-info 끝점에 전달하면 됩니다.
 
 <br/>
