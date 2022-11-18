@@ -2,7 +2,7 @@
   <h3 align="center">NestJS Github OAuth API</h3>
 
   <p align="center">
-    NestJS Github OAuth API를 학습하기 위한 저장소입니다.. <br/> 
+    NestJS Github OAuth API를 학습하기 위한 저장소입니다. <br/> 
     <br />
     <a href="https://github.com/baobabnamu/nestjs-github-oauth"><strong>Explore the docs »</strong></a>
     <br />
@@ -30,6 +30,8 @@
 <br/>
 
 ## How to Test
+react-github-oauth 프로젝트 실행 후 Github 액세스 토큰을 발급 받기 위한 코드를 얻어내야 합니다.
+해당 코드를 /github-info 끝점에 전달하면 됩니다.
 
 <br/>
 <br/>
