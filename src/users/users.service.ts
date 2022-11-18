@@ -1,5 +1,5 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
-import axios, { AxiosResponse } from 'axios';
+import axios, { AxiosResponse  } from 'axios';
 import { GithubCodeDto } from './dto/github-code.dto';
 // 깃허브에서 발급받은 CLIENT_ID와 CLIENT_SECRET을 config 파일에 저장하여 불러옵니다.
 
@@ -12,7 +12,7 @@ export interface IGithubUserTypes {
 }
 
 @Injectable()
-export default class UsersService {
+export default class UserService {
   public async getGithubInfo(githubCodeDto: GithubCodeDto): Promise<IGithubUserTypes> {
     const { code } = githubCodeDto;
     // 웹에서 query string으로 받은 code를 서버로 넘겨 받습니다.
@@ -21,9 +21,9 @@ export default class UsersService {
     // 깃허브 access token을 얻기위한 요청 API 주소
 
     const request = {
-      code,
       client_id: process.env.CLIENT_ID,
       client_secret: process.env.CLIENT_SECRET,
+      code
     };
     // Body에는 Client ID, Client Secret, 웹에서 query string으로 받은 code를 넣어서 전달해주어야 합니다.
 
